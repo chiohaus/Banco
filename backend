@@ -1,0 +1,59 @@
+package practicabanco.backend;
+
+/**
+ *
+ * @author Alumnos UTJCCD
+ */
+public class Cuenta {
+
+ 
+private String titular;
+private long numero;  
+private float saldo;
+
+
+//acceso, asignación set
+
+    public void setNumero(long numero) {
+        this.numero = numero;
+    }
+
+    public void setTitular(String titular) {
+        this.titular = titular;
+    }
+
+    public void setSaldo(float saldo) {
+        this.saldo = saldo;
+    }        
+        public void deposito(float cantidad){
+            saldo += cantidad;
+        }
+        
+        public void retiro(float cantidad){
+            saldo-=cantidad;
+        }
+        
+        public boolean numerosRojos(){
+            boolean rojos;
+        if (saldo<=0){
+            rojos = true;
+        }else{
+    rojos=false;
+} return rojos;
+}
+
+// retorno, devolución get
+
+    public long getNumero() {
+        return numero;
+    }
+
+    public String getTitular() {
+        return titular;
+    }
+
+    public float getSaldo() {
+        return saldo;
+    
+}
+}
