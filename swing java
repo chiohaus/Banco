@@ -2,3 +2,27 @@ PRogramación orientada a objetos visual
 
 Swing-Java
 
+JLabel
+
+Propiedades (modo diseño):
+Text
+Icon
+Font
+Foreground
+
+Métodos (Modo de ejecución, en código)
+setText(String)
+setIcon(Image)
+setFont(Font)
+setForeground(Color)
+getText()String
+getIcon()Image
+getFont()Font
+getForeground()
+
+Action performed clic
+JOptionPane
+
+showMessageDialog()
+showImputDialog()
+showConfirmDialog()
