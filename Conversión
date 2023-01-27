@@ -1,0 +1,32 @@
+--Conversión implícita--
+int iDato=0;
+long lDato=0;
+float fDato=0;
+double dDato=0;
+
+lDato = iDato;
+dDato = fDato + lDato – iDato
+fDato = lDato;
+
+
+--Conversión entre primitivos--
+int iDato=0; long lDato=0; float fDato=0; double
+dDato=2;
+
+fDato = (float) dDato;
+lDato = (long) fDato;
+iDato = (int) lDato;
+
+
+--Parseo--
+String - Double
+Double.parseDouble(valorString)
+
+String-int
+Double.parseInt()
+
+String - float
+Float.parseFloat()
+
+Cualquier tipo numérico (int, long, float, double) - String
+String.valueOf(valornumerico)
